@@ -29,6 +29,10 @@ def Postorder(node):
     Postorder(node.l)
     Postorder(node.r)
     print(node.d,end=" ")
+def Height(node):
+    if node == None:
+        return -1
+    return max(Height(node.l),Height(node.r))+1
 for _ in range(int(input())):
     N = int(input())
     arr = list(map(int,input().split()))
