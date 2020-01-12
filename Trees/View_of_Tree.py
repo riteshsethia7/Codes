@@ -39,5 +39,5 @@ for _ in range(int(input())):
     Filldepth(node,0)
     for i in range(h+1):
         arr = [k for k,v in depth.items() if v==i  ]
-        print(arr[0],end=" ")
+        print(arr[0],end=" ") #make arr[-1] for Right View
     print()
